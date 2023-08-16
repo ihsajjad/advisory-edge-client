@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import HeroBtn from "../../../components/heroBtn/HeroBtn";
 
 const HeroSection = () => {
@@ -28,11 +28,15 @@ const HeroSection = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper min-h-screen"
       >
         {sliders.map((slider, i) => (
@@ -46,7 +50,7 @@ const HeroSection = () => {
                 />
               </div>
               <div className="absolute z-10 top-0 left-auto bg-opacity-20 bg-slate-800 h-full w-full flex items-center">
-                <div className="h-fit md:p-10 md:mx-12 rounded-lg border-[var(--main-color)] bg-opacity-20 text-white space-y-2 bg-gradient-to-r from-[var(--bg-primary)]">
+                <div className="h-fit md:p-10 md:mx-10 rounded-lg border-[var(--main-color)] bg-opacity-20 text-white space-y-2 bg-gradient-to-r from-[var(--bg-secondary)]">
                   <h3 className="text-3xl  text-[var(--main-color)] font-bold">
                     {slider.title}
                   </h3>
