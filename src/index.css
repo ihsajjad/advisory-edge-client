@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --main-color: #0af761; /*#5fd58b*/
+  --bg-primary: #1d265c;
+  --bg-secondary: #404a87;
+}
+
+.nav-item {
+  @apply font-bold;
+}
+
+.active-item {
+  @apply text-[var(--main-color)];
+}
