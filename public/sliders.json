@@ -1,0 +1,26 @@
+[
+  {
+    "image": "https://images.pexels.com/photos/5325104/pexels-photo-5325104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Your Strategic Partner",
+    "subtitle": "Unlocking Brand Potential",
+    "description": "Advisory Edge brings together a team of developers, designers, marketers, and content producers to provide comprehensive consultancy and full-stack support for your brand's success.",
+    "cta": "Explore Services",
+    "link": "/services"
+  },
+  {
+    "image": "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg",
+    "title": "Innovate with Confidence",
+    "subtitle": "Expertise across Domains",
+    "description": "Our talented professionals collaborate seamlessly to drive innovation. From cutting-edge technology solutions to captivating design and effective marketing strategies, we're here to elevate your brand's impact.",
+    "cta": "Learn More",
+    "link": "/about-us"
+  },
+  {
+    "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Unleash Brand Excellence",
+    "subtitle": "Crafting Memorable Experiences",
+    "description": "At Advisory Edge, we're not just consultants; we're your partners in crafting remarkable brand experiences. Our full stack support empowers your brand to stand out, captivate audiences, and thrive.",
+    "cta": "Discover Success",
+    "link": "/testimonials"
+  }
+]
