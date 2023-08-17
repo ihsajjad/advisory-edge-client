@@ -41,14 +41,14 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen bg-base-200 md:py-12 md:px-10 flex">
+    <div className="min-h-screen bg-base-200 md:py-12 pb-4 md:px-10 px-2 flex md:flex-row flex-col">
       <div className="flex-1">
         <Lottie animationData={animation}></Lottie>
       </div>
 
       <div className="flex-1 flex justify-center items-center">
         <div className=" card md:w-2/3 w-full shadow-2xl bg-base-100 border-[var(--main-color)] border-2">
-          <h2 className="text-3xl font-bold text-center mt-8">
+          <h2 className="text-3xl font-bold text-center md:mt-8 mt-4">
             Please Register!
           </h2>
           <form onSubmit={handleSubmit(handleSignUp)} className="card-body">

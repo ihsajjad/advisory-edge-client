@@ -75,7 +75,7 @@ const NavBar = () => {
             {options}
           </ul>
         </div>
-        <Link to="/" className=" text-2xl font-bold">
+        <Link to="/" className="md:text-2xl text-xl font-bold">
           Advisory<span className="text-[var(--main-color)]">Edge</span>
         </Link>
       </div>
@@ -85,7 +85,7 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="flex space-x-4 items-center">
+        <div className="flex md:space-x-4 space-x-1 items-center">
           {user ? (
             <>
               <img
@@ -94,10 +94,10 @@ const NavBar = () => {
                   "https://i.postimg.cc/d1bNpF8n/user-solid.png"
                 }`}
                 alt=""
-                className="h-10 w-10 rounded-full bg-[var(--main-color)] p-1"
+                className="md:h-10 md:w-10 h-8 w-8 rounded-full bg-[var(--main-color)] md:p-1"
               />
 
-              <button onClick={logOut} className="btn btn-sm">
+              <button onClick={logOut} className="btn md:btn-sm btn-xs">
                 Log Out
               </button>
             </>
