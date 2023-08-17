@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProviders";
 const NavBar = () => {
+  const { user, loading, logOut } = useContext(AuthContext);
+
   const options = (
     <>
       <li>
@@ -43,16 +47,18 @@ const NavBar = () => {
           Testimonials
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/dashboard"
-          className={({ isActive }) =>
-            ` ${isActive ? "active-item" : ""} nav-item`
-          }
-        >
-          Dashboard
-        </NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              ` ${isActive ? "active-item" : ""} nav-item`
+            }
+          >
+            Dashboard
+          </NavLink>
+        </li>
+      )}
     </>
   );
   return (
@@ -80,9 +86,28 @@ const NavBar = () => {
 
       <div className="navbar-end">
         <div className="flex space-x-4 items-center">
-          <Link to="/login" className="font-bold">
-            Login
-          </Link>
+          {user ? (
+            <>
+              <img
+                src={`${
+                  user?.photoURL ||
+                  "https://i.postimg.cc/d1bNpF8n/user-solid.png"
+                }`}
+                alt=""
+                className="h-10 w-10 rounded-full bg-[var(--main-color)] p-1"
+              />
+
+              <button onClick={logOut} className="btn btn-sm">
+                Log Out
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="font-bold">
+                Login
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>

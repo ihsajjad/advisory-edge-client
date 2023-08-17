@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import animation from "../../assets/register.json";
 import Lottie from "lottie-react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 const Register = () => {
   const [error, setError] = useState("");
+  const { createUser, updateUserProfile } = useContext(AuthContext);
 
   const {
     register,
@@ -14,7 +16,28 @@ const Register = () => {
   } = useForm();
 
   // handling sign up
-  const handleSignUp = (data) => {};
+  const handleSignUp = (data) => {
+    setError("");
+    const { email, name, password, confirm } = data;
+
+    // matching password
+    if (password !== confirm) {
+      return setError("Password doesn't match");
+    }
+
+    // creating new user using email and password
+    createUser(email, password)
+      .then((result) => {
+        const newUser = result.user;
+        if (newUser) {
+          // updating user's name and profile
+          updateUserProfile(name, "");
+        }
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
   return (
     <div className="min-h-screen bg-base-200 md:py-12 md:px-10 flex">
