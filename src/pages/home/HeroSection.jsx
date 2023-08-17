@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import HeroBtn from "../../../components/heroBtn/HeroBtn";
+import HeroBtn from "../../components/heroBtn/HeroBtn";
 
 const HeroSection = () => {
   const [sliders, setSliders] = useState([]);

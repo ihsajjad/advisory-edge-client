@@ -19,3 +19,21 @@
 .custom-btn-outline {
   @apply hover:bg-[var(--bg-secondary)] hover:text-[var(--main-color)] py-2 rounded-lg border-2 border-[var(--bg-primary)] bg-transparent text-[var(--bg-secondary)] duration-300;
 }
+
+.section-title {
+  @apply text-3xl text-center text-[var(--bg-primary)] font-bold md:mb-10;
+}
+
+#featured-services {
+  background-image: url("https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.featured-service-card {
+  @apply border-y-8 border-[var(--bg-secondary)] hover:border-y-8 hover:border-[var(--bg-primary)] bg-[var(--bg-secondary)] text-white md:p-5 rounded-lg flex flex-col space-y-3 hover:scale-105 duration-300;
+}
+
+.featured-service-card:hover a {
+  @apply bg-[var(--bg-primary)];
+}

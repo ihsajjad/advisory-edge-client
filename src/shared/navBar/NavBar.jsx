@@ -15,7 +15,7 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink
-          to="/book-now"
+          to="/services"
           className={({ isActive }) =>
             ` ${isActive ? "active-item" : ""} nav-item`
           }

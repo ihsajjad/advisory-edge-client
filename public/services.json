@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Web Development",
+    "description": "Crafting responsive and user-friendly websites that drive engagement and conversions.",
+    "icon": "web-development-icon.png",
+    "image": "web-development-image.jpg",
+    "ctaText": "Learn More",
+    "ctaLink": "/web-development",
+    "features": [
+      "Customized website solutions",
+      "Responsive design",
+      "E-commerce integration",
+      "User experience optimization"
+    ]
+  },
+  {
+    "title": "Design",
+    "description": "Creating visually stunning and impactful designs that resonate with your target audience.",
+    "icon": "design-icon.png",
+    "image": "design-image.jpg",
+    "ctaText": "Explore Design",
+    "ctaLink": "/design-services",
+    "features": [
+      "Brand identity design",
+      "UI/UX design",
+      "Visual storytelling",
+      "Print and digital design"
+    ]
+  },
+  {
+    "title": "Marketing",
+    "description": "Strategizing and executing data-driven marketing campaigns to boost brand visibility and growth.",
+    "icon": "marketing-icon.png",
+    "image": "marketing-image.jpg",
+    "ctaText": "Discover Marketing",
+    "ctaLink": "/marketing-services",
+    "features": [
+      "Social media campaigns",
+      "SEO and SEM strategies",
+      "Email marketing",
+      "Analytics and reporting"
+    ]
+  },
+  {
+    "title": "Content Production",
+    "description": "Crafting compelling and relevant content that engages, educates, and connects with your audience.",
+    "icon": "content-production-icon.png",
+    "image": "content-production-image.jpg",
+    "ctaText": "Explore Content",
+    "ctaLink": "/content-production",
+    "features": [
+      "Content strategy",
+      "Copywriting and editing",
+      "Visual and multimedia content",
+      "Content distribution"
+    ]
+  }
+]

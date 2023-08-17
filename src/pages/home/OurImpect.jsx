@@ -14,10 +14,8 @@ const OurImpect = () => {
     fetchData();
   }, []);
   return (
-    <section className="min-h-[50vh] md:px-10">
-      <h3 className="text-3xl text-center text-[var(--bg-primary)] font-bold md:my-10">
-        Our Impact
-      </h3>
+    <section className="min-h-fit md:px-10 md:py-16">
+      <h3 className="section-title">Our Impact</h3>
       <div className="flex items-center justify-between text-center">
         {impacts.map((impact) => (
           <div
