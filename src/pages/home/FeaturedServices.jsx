@@ -16,7 +16,7 @@ const FeaturedServices = () => {
 
   return (
     <section id="featured-services" className="">
-      <div className="bg-white bg-opacity-50 min-h-screen md:px-10 md:py-16">
+      <div className="bg-slate-600 bg-opacity-50 min-h-screen md:px-10 md:py-16">
         <h3 className="text-3xl w-fit mx-auto py-2 px-5 text-[var(--main-color)] text-center font-bold md:mb-10 bg-[var(--bg-secondary)] rounded-full">
           Featured Searvices
         </h3>
@@ -27,7 +27,7 @@ const FeaturedServices = () => {
                 {service.title}
               </h3>
               <p className="text-justify">{service.description}</p>
-              <h5>Features</h5>
+              <h5 className="font-bold">Features :-</h5>
               <ul className="list-disc pl-6 isc-[var(--main-color)]">
                 {service?.features?.map((feature, i) => (
                   <li key={i}>{feature}</li>

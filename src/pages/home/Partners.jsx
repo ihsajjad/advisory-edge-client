@@ -10,7 +10,7 @@ const Partners = () => {
   return (
     <section className="md:px-10 md:py-12 h-fit">
       <h3 className="section-title">Our Partners</h3>
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex items-center justify-between gap-5 md:px-10">
         {logos.map((logo, i) => (
           <div key={i} className="w-52">
             <img src={logo} alt="" className="w-full h-20" />

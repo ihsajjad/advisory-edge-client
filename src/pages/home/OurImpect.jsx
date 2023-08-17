@@ -20,7 +20,7 @@ const OurImpect = () => {
         {impacts.map((impact) => (
           <div
             key={impact.count}
-            className="bg-[var(--bg-primary)] md:p-10 rounded-lg"
+            className="bg-[var(--bg-secondary)] md:p-10 rounded-lg"
           >
             <h3 className="text-2xl text-white">{impact.title}</h3>
             <span className="text-4xl font-bold text-[var(--main-color)]">
