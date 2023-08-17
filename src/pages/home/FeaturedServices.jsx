@@ -16,14 +16,16 @@ const FeaturedServices = () => {
 
   return (
     <section id="featured-services" className="">
-      <div className="bg-black bg-opacity-50 min-h-screen md:px-10 md:py-16">
+      <div className="bg-white bg-opacity-50 min-h-screen md:px-10 md:py-16">
         <h3 className="text-3xl w-fit mx-auto py-2 px-5 text-[var(--main-color)] text-center font-bold md:mb-10 bg-[var(--bg-secondary)] rounded-full">
           Featured Searvices
         </h3>
         <div className="flex justify-between items-center md:gap-12 md:px-10">
           {services?.map((service, i) => (
             <div key={i} className="featured-service-card flex-1">
-              <h3 className="text-xl font-bold text-center">{service.title}</h3>
+              <h3 className="text-xl font-bold text-center ">
+                {service.title}
+              </h3>
               <p className="text-justify">{service.description}</p>
               <h5>Features</h5>
               <ul className="list-disc pl-6 isc-[var(--main-color)]">

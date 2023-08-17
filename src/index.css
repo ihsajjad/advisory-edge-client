@@ -37,3 +37,7 @@
 .featured-service-card:hover a {
   @apply bg-[var(--bg-primary)];
 }
+
+.featured-service-card:hover h3 {
+  @apply text-[var(--main-color)];
+}

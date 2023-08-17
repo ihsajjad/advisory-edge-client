@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Boost",
+    "price": "$1,499/month",
+    "services": [
+      "Web Development",
+      "Brand Design",
+      "Social Media Marketing",
+      "Content Strategy"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Growth Accelerator",
+    "price": "$2,999/month",
+    "services": [
+      "Custom Web Solutions",
+      "UI/UX Design",
+      "SEO & SEM",
+      "Content Creation"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Pro",
+    "price": "$4,999/month",
+    "services": [
+      "Comprehensive Web Solutions",
+      "Branding & Design",
+      "Complete Digital Marketing",
+      "Content Production & Distribution"
+    ]
+  }
+]
