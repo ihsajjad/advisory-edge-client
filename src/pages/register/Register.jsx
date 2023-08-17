@@ -22,7 +22,7 @@ const Register = () => {
         <Lottie animationData={animation}></Lottie>
       </div>
 
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-center items-center">
         <div className=" card md:w-2/3 w-full shadow-2xl bg-base-100 border-[var(--main-color)] border-2">
           <h2 className="text-3xl font-bold text-center mt-8">
             Please Register!
