@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import animation from "../../assets/login.json";
 import Lottie from "lottie-react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 const Login = () => {
   const [error, setError] = useState("");
+  const { logInUser } = useContext(AuthContext);
 
   const {
     register,
@@ -13,11 +15,15 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  // handling sign up
-  const handleLogin = (data) => {};
+  const handleLogin = (data) => {
+    setError("");
+    logInUser(data.email, data.password)
+      .then(() => {})
+      .catch((error) => setError(error.message));
+  };
 
   return (
-    <div className="min-h-screen bg-base-200 md:py-12 md:px-10 flex">
+    <div className="h-fit bg-base-200 md:py-12 md:px-10 flex">
       <div className="flex-1">
         <Lottie animationData={animation}></Lottie>
       </div>
@@ -50,9 +56,6 @@ const Login = () => {
                   placeholder="password"
                   {...register("password", {
                     required: true,
-                    minLength: 6,
-                    maxLength: 20,
-                    pattern: /(?=.*[A-Z])(?=.*[!@#$&%*])(?=.*[0-9])(?=.*[a-z])/,
                   })}
                   className="input input-bordered"
                   required
