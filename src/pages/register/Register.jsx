@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import animation from "../../assets/register.json";
 import Lottie from "lottie-react";
 import { AuthContext } from "../../providers/AuthProviders";
+import SocialLogin from "../../components/socialLogin/SocialLogin";
 
 const Register = () => {
   const [error, setError] = useState("");
@@ -146,6 +147,7 @@ const Register = () => {
           <div className="divider">OR</div>
 
           {/* Socials sign in including google */}
+          <SocialLogin />
 
           <p className="text-center mb-4">
             Already have an account? please{" "}

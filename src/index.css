@@ -21,7 +21,7 @@
 }
 
 .section-title {
-  @apply text-3xl text-center text-[var(--bg-primary)] font-bold md:mb-10;
+  @apply text-3xl text-center text-[var(--bg-primary)] font-bold md:mb-10 mb-4;
 }
 
 #featured-services {

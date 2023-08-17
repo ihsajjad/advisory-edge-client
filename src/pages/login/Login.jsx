@@ -4,16 +4,13 @@ import { useContext, useState } from "react";
 import animation from "../../assets/login.json";
 import Lottie from "lottie-react";
 import { AuthContext } from "../../providers/AuthProviders";
+import SocialLogin from "../../components/socialLogin/SocialLogin";
 
 const Login = () => {
   const [error, setError] = useState("");
   const { logInUser } = useContext(AuthContext);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const handleLogin = (data) => {
     setError("");
@@ -74,6 +71,7 @@ const Login = () => {
           <div className="divider">OR</div>
 
           {/* Socials sign in including google */}
+          <SocialLogin />
 
           <p className="text-center mb-4">
             New in Advisory Edge? please{" "}

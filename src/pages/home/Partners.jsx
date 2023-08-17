@@ -8,13 +8,16 @@ const Partners = () => {
   const logos = [logo1, logo2, logo3, logo4, logo5];
 
   return (
-    <section className="md:px-10 md:py-12 h-fit">
+    <section className="h-fit md:px-10 px-2 md:py-16 py-5">
       <h3 className="section-title">Our Partners</h3>
-      <div className="flex items-center justify-between gap-5 md:px-10">
+      <div className="flex md:flex-row items-center justify-between flex-wrap gap-5 md:px-10 h-fit">
         {logos.map((logo, i) => (
-          <div key={i} className="w-52">
-            <img src={logo} alt="" className="w-full h-20" />
-          </div>
+          <img
+            key={i}
+            src={logo}
+            alt=""
+            className="md:w-40 w-20 md:h-12 h-6 block"
+          />
         ))}
       </div>
     </section>

@@ -50,8 +50,8 @@ const HeroSection = () => {
                 />
               </div>
               <div className="absolute z-10 top-0 left-auto bg-opacity-20 bg-slate-800 h-full w-full flex items-center">
-                <div className="h-fit md:p-10 md:mx-10 rounded-lg border-[var(--main-color)] bg-opacity-20 text-white space-y-2 bg-gradient-to-r from-[var(--bg-secondary)]">
-                  <h3 className="text-3xl  text-[var(--main-color)] font-bold">
+                <div className="h-fit md:p-10 p-5 md:mx-10 rounded-lg border-[var(--main-color)] bg-opacity-20 text-white space-y-2 bg-gradient-to-r from-[var(--bg-secondary)]">
+                  <h3 className="text-3xl text-[var(--main-color)] font-bold">
                     {slider.title}
                   </h3>
                   <h3 className="text-xl">{slider.subtitle}</h3>
